@@ -20,6 +20,8 @@ public class BossBehaviour : MonoBehaviour
 
     public void Check()
     {
+        // Checks if there is no other spell activated, if not check the conditions and turn to the right case.
+
         switch (Behave)
         {
 
@@ -45,6 +47,11 @@ public class BossBehaviour : MonoBehaviour
         }
 
 
+    }
+
+    public void Spell()
+    {
+        // Activate the spell 
     }
 
 }
