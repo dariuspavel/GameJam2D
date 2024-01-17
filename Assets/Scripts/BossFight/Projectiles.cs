@@ -6,59 +6,40 @@ public class Projectiles : MonoBehaviour
 {
 
     private int Damage = 10;
-    private float speed = 5;
-    public float clampY = -2f;
-
-    private bool isFalling = true;
+    //private float speed = 5;
+  
     private Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        StartCoroutine(DestroyAfterDelay());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isFalling)
-        {
-            Fall();
-        }
+     
     }
 
-    private void Fall()  // Move the projectile down and destroy at clam position
-    {
-        Vector2 currentPosition = transform.position;
-
-        currentPosition.y = Mathf.Clamp(currentPosition.y - speed * Time.deltaTime, -Mathf.Infinity, clampY);
-
-        rb.MovePosition(currentPosition);
-
-        if (currentPosition.y <= clampY)
-        {
-            rb.isKinematic = false;
-            isFalling = false;
-
-            StartCoroutine(DestroyAfterDelay(0.5f));
-        }
-    }
+  
 
    
-  /*  public void OnTriggerEnter2D(Collider2D coll)
+   public void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.CompareTag("Player"))
         {
-            coll.GetComponent<Player>().Health -= Damage;
+            coll.GetComponent<PlayerHealthBar>().currentPlayerHealth -= Damage;
 
             Destroy(gameObject);
         }
     }
-  */
+  
 
-    private IEnumerator DestroyAfterDelay(float delay)
+    private IEnumerator DestroyAfterDelay()
     {
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
 
