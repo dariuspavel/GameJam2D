@@ -9,7 +9,7 @@ public class PlayerBullet : MonoBehaviour
     // public GameObject hitEffect;
     private float bulletDamage = 1f;
 
-/*    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         // To be added when working on bullet animation
         // GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
@@ -24,8 +24,8 @@ public class PlayerBullet : MonoBehaviour
             }
             Destroy(gameObject);
         }
-    }*/
-    private void OnCollisionEnter2D(Collision2D collision)
+    }
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
@@ -36,6 +36,6 @@ public class PlayerBullet : MonoBehaviour
             }
             Destroy(gameObject);
         }
-    }
+    }*/
 
 }
