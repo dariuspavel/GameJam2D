@@ -9,19 +9,33 @@ public class PlayerBullet : MonoBehaviour
     // public GameObject hitEffect;
     private float bulletDamage = 1f;
 
-    void OnCollisionEnter2D(Collision2D collision){
+/*    private void OnTriggerEnter2D(Collider2D collision)
+    {
         // To be added when working on bullet animation
         // GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         // Destroy(effect, 5f);
-        Destroy(gameObject);
-        if (collision.gameObject.CompareTag("Enemy")) 
-        { 
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
             EnemyDamageProperty enemy = collision.transform.GetComponent<EnemyDamageProperty>();
-            if (enemy != null) {
+            if (enemy != null)
+            {
                 enemy.takeDamage(bulletDamage);
             }
-        } 
-            
-            
+            Destroy(gameObject);
         }
+    }*/
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            EnemyDamageProperty enemy = collision.transform.GetComponent<EnemyDamageProperty>();
+            if (enemy != null)
+            {
+                enemy.takeDamage(bulletDamage);
+            }
+            Destroy(gameObject);
+        }
+    }
+
 }

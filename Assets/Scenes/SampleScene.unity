@@ -129,24 +129,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 969930160098325524, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
-      propertyPath: height
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 969930160098325524, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
       propertyPath: maxSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 969930160098325524, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
-      propertyPath: constrainInsideGraph
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1160722263081187653, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
-      propertyPath: maxFrameTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1160722263081187653, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
-      propertyPath: data.dataString
-      value: UEsDBBQAAAgIAAAQIewjwBq2ZgIAACAFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty2jAU/RVG65KxTR6ku9YhpIskTGgnG2+EdI01yJJHjwDJ8O+9km3sUjbI59zHuUfX/iJC2QaY02ZpBH/WHMj3CQln8m0ykE9woFut1uIT+ph3wV0VgmiMeaNOaMTTkGZ1Dc4I9kNtZQhOEPRKlNrUC76FXFtnES6ptICU0S5kK4S+JuSAf9P7kHLEU3YXTp94uk8mJzwyUA7MKDS5Su/xN7/J5l3ONOtS2gyvmKR1AzzIHxLTpO+BpxiocLQuJozBtJTCdrqIOzZx7pw21uNUGMAFxTmjmPQq9KxAbCsXVI/TX8vSgutsMPT4IAwa1tYlP3XrYk3trtX2QaWHs/i25PN/7DSNdGl0/dR3bSdylWC7N3pk1LqRyWP4YSQ8GrSnckc3Et4rUC96abRXHElnfEj1FrKH4fE8WF4B2w14K/UC9M3geO93f6NhhlOc/ZBLUW8CdXXdAmupo99xEcDgzfxCwXFNbFcC0aDij4XfdDvep454FMY6pLopVZC30d6EULKInoVpvMu1URDhTnQDikp3XGEZd3mBF9yo7QXzSMOb0zXvuP6FuEiJ8BCfJBfUSu/Pl2UrvX8GW716J4WCQXQgXtCnXCvV7tfYkz5t7U1J2Sht6wX/d7XIHc9uM0bLeZbMspt0M72lGaTz61mWsDs2mzESd08onJPKVSu0swdvTQ3FFe5Z/0GZLA1t4q5zQ/dL8VnrkeVClXrNDIB6bSuchYPBJvhW8gUXaNAanBMq3jf5KojUbAe8OBcq4qSLgzO0GKoUpBEf2gWkIHn8ghQkwOddXhn4ELAPzftiJ3L6C1BLAwQUAAAICAAAECHsyaNJU20AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0knmKkZlRcmKahZGBsZGpYZKuWaJRqqGFibGRQbJ5srFxslIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAECHsI8AatmYCAAAgBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAECHsyaNJU20AAAB4AAAACQAkAAAAAAAAAAAAAACzAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAGsDAAAAAA==
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1600717038849654719, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -154,7 +138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1600717038849654719, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -3.63
       objectReference: {fileID: 0}
     - target: {fileID: 1600717038849654719, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -191,14 +175,6 @@ PrefabInstance:
     - target: {fileID: 2809699734977846294, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
       propertyPath: m_Name
       value: BasicEnemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 2809699734977846294, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 3262818816704589821, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
-      propertyPath: m_Mass
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7108462642680552027, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
       propertyPath: target
@@ -730,16 +706,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 982209630756805690, guid: af6cf07e5d67aeb499dbcc693c6bb436, type: 3}
+      propertyPath: moveSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 982209630756805690, guid: af6cf07e5d67aeb499dbcc693c6bb436, type: 3}
       propertyPath: mousePointCamera
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 3794832691246368796, guid: af6cf07e5d67aeb499dbcc693c6bb436, type: 3}
       propertyPath: m_Name
       value: MainCharacter
-      objectReference: {fileID: 0}
-    - target: {fileID: 3794832691246368796, guid: af6cf07e5d67aeb499dbcc693c6bb436, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8004557792122930543, guid: af6cf07e5d67aeb499dbcc693c6bb436, type: 3}
       propertyPath: m_LocalPosition.x
@@ -781,32 +757,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8365185676997510674, guid: af6cf07e5d67aeb499dbcc693c6bb436, type: 3}
+      propertyPath: playerHealthBar
+      value: 
+      objectReference: {fileID: 1702049360}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3794832691246368796, guid: af6cf07e5d67aeb499dbcc693c6bb436, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2124297501}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6cf07e5d67aeb499dbcc693c6bb436, type: 3}
---- !u!1 &2124297496 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3794832691246368796, guid: af6cf07e5d67aeb499dbcc693c6bb436, type: 3}
-  m_PrefabInstance: {fileID: 1912047398}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2124297501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124297496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c78486f2379542e418d2c82db7796cc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerHealthBar: {fileID: 1702049360}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
