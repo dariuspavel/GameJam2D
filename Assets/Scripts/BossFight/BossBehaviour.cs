@@ -7,14 +7,23 @@ public class BossBehaviour : MonoBehaviour
 
     public int Behave = 0;   // if 0 do nothing   1 - basic attack   2 - spell fire from above, 3 - shot directly 10 fireballs
 
+
+    [Header("Locations")]
+    public Transform playerPosition;
+
+    public Transform[] spawnLocations;
+
+
+
+    [Header("Objects")]
     public GameObject Abilitie0;
 
-    public Transform playerPosition;
+    public GameObject EnemyPrefab;
 
 
     void Start()
     {
-
+        // maybe run animation? 
     }
 
     void Update()
@@ -34,11 +43,11 @@ public class BossBehaviour : MonoBehaviour
                 break;
 
             case 1:
-                performAttack();
+                firstSpell();
                 break;
 
             case 2:
-                // spell 
+                secondSpell();
                 break;
 
             case 3:
@@ -58,7 +67,7 @@ public class BossBehaviour : MonoBehaviour
         // Activate the spell 
     }
 
-    public void performAttack()
+    public void firstSpell()
     {
         int Object = 5;
 
@@ -82,6 +91,33 @@ public class BossBehaviour : MonoBehaviour
         }
 
         Behave = 0;
+    }
+
+    public void secondSpell() // Spawn more enemies.
+    {
+        int enemiesToSpawn = 2;   // they will spawn in 2 locations that means 2 x 2
+
+        for (int i = 0; i < enemiesToSpawn; i++)
+        {
+            Instantiate(EnemyPrefab, spawnLocations[0].position , Quaternion.identity);
+
+            Instantiate(EnemyPrefab, spawnLocations[1].position, Quaternion.identity);
+        }
+
+        Behave = 0;
+
+    }
+    public void thirdSpell() // Spawn more enemies.
+    {
+        //shoot qucik 3 projectiles that one destroyed shoot more projectiles out of them.
+    }
+
+    public void checkState()
+    {
+
+        // check if the fight has started and if current state = 0
+        //  IEnumerate SecondsUntilAttack()   
+        // Change the behave depending on the situation or randomise it.
     }
 
 }

@@ -134,6 +134,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6090572345305313542}
   - component: {fileID: 3714414097383942555}
+  - component: {fileID: 3719056228768678063}
+  - component: {fileID: 4019052779145322432}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -215,6 +217,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3719056228768678063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4927747232977128742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0e7633f06c86c4aa53098fc6ad215c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1000
+--- !u!114 &4019052779145322432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4927747232977128742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b5a2d5110b77f4b8984a4dc439bcae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Behave: 0
+  Abilitie0: {fileID: 8228764641133007698, guid: cbe57ea2b1f6f4c4bbac034700ffd78c, type: 3}
+  playerPosition: {fileID: 0}
 --- !u!1 &8163439154979364409
 GameObject:
   m_ObjectHideFlags: 0

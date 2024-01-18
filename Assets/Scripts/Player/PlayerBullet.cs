@@ -7,7 +7,7 @@ public class PlayerBullet : MonoBehaviour
 {
     // To be added when working on bullet animation
     // public GameObject hitEffect;
-    private float bulletDamage = 1f;
+    public float bulletDamage = 1f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
