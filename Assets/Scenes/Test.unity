@@ -572,8 +572,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 1.2
+  m_AngularDrag: 1.55
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -708,10 +708,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3719056228768678063, guid: bd0a3dc9dfbdb0049ad22a32022dd96a, type: 3}
+      propertyPath: Health
+      value: 333
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019052779145322432, guid: bd0a3dc9dfbdb0049ad22a32022dd96a, type: 3}
+      propertyPath: Behave
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019052779145322432, guid: bd0a3dc9dfbdb0049ad22a32022dd96a, type: 3}
+      propertyPath: isZero
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019052779145322432, guid: bd0a3dc9dfbdb0049ad22a32022dd96a, type: 3}
+      propertyPath: Abilitie3
+      value: 
+      objectReference: {fileID: 1867496731353131048, guid: 71f7acea66b740e42b0d2d63c47fe745, type: 3}
     - target: {fileID: 4019052779145322432, guid: bd0a3dc9dfbdb0049ad22a32022dd96a, type: 3}
       propertyPath: EnemyPrefab
       value: 
       objectReference: {fileID: 2809699734977846294, guid: 1c07885270695df42b06001aa37a82e1, type: 3}
+    - target: {fileID: 4019052779145322432, guid: bd0a3dc9dfbdb0049ad22a32022dd96a, type: 3}
+      propertyPath: warningSign
+      value: 
+      objectReference: {fileID: 4707775429488207402, guid: 748231b2c2d899e49976f09c6c9bf221, type: 3}
     - target: {fileID: 4019052779145322432, guid: bd0a3dc9dfbdb0049ad22a32022dd96a, type: 3}
       propertyPath: playerPosition
       value: 

@@ -31,6 +31,7 @@ public class Projectiles : MonoBehaviour
         if (coll.CompareTag("Player"))
         {
             coll.GetComponent<PlayerHealthBar>().currentPlayerHealth -= Damage;
+            Debug.Log("ShouldDestroy");
 
             Destroy(gameObject);
         }
