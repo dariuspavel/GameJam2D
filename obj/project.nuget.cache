@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JaiBCVP+OQqg+ln7neL1+2ptzCdkXd4Qe1nfzcKhy0xxoAe4Xpuc2k4+gWKdbb3dQY1FCLe5ptCiyYPJh5tbxA==",
+  "dgSpecHash": "qcjpQaiQSeXlCCqtGG7cX30ZJeEOXzR0u2ey67/e1XyeSv35+G904Uyv1WpP3M1IAdUw+vvUmtwzsnTzPMjQAw==",
   "success": true,
-  "projectFilePath": "D:\\IT\\Unity Projects\\2D\\GameJam\\AstarPathfindingProjectEditor.csproj",
+  "projectFilePath": "D:\\IT\\Unity Projects\\2D\\GameJam\\PackageToolsEditor.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
