@@ -12,20 +12,6 @@
           "bin/placeholder/AstarPathfindingProject.dll": {}
         }
       },
-      "AstarPathfindingProjectEditor/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
-        "dependencies": {
-          "AstarPathfindingProject": "1.0.0",
-          "PackageToolsEditor": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/AstarPathfindingProjectEditor.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AstarPathfindingProjectEditor.dll": {}
-        }
-      },
       "PackageToolsEditor/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -47,11 +33,6 @@
       "path": "AstarPathfindingProject.csproj",
       "msbuildProject": "AstarPathfindingProject.csproj"
     },
-    "AstarPathfindingProjectEditor/1.0.0": {
-      "type": "project",
-      "path": "AstarPathfindingProjectEditor.csproj",
-      "msbuildProject": "AstarPathfindingProjectEditor.csproj"
-    },
     "PackageToolsEditor/1.0.0": {
       "type": "project",
       "path": "PackageToolsEditor.csproj",
@@ -61,7 +42,6 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
       "AstarPathfindingProject >= 1.0.0",
-      "AstarPathfindingProjectEditor >= 1.0.0",
       "PackageToolsEditor >= 1.0.0"
     ]
   },
@@ -71,9 +51,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IT\\Unity Projects\\2D\\GameJam\\Assembly-CSharp.csproj",
-      "projectName": "Assembly-CSharp",
-      "projectPath": "D:\\IT\\Unity Projects\\2D\\GameJam\\Assembly-CSharp.csproj",
+      "projectUniqueName": "D:\\IT\\Unity Projects\\2D\\GameJam\\AstarPathfindingProjectEditor.csproj",
+      "projectName": "AstarPathfindingProjectEditor",
+      "projectPath": "D:\\IT\\Unity Projects\\2D\\GameJam\\AstarPathfindingProjectEditor.csproj",
       "packagesPath": "C:\\Users\\Giovanni Giorgio\\.nuget\\packages\\",
       "outputPath": "D:\\IT\\Unity Projects\\2D\\GameJam\\obj\\",
       "projectStyle": "PackageReference",
@@ -92,9 +72,6 @@
           "projectReferences": {
             "D:\\IT\\Unity Projects\\2D\\GameJam\\AstarPathfindingProject.csproj": {
               "projectPath": "D:\\IT\\Unity Projects\\2D\\GameJam\\AstarPathfindingProject.csproj"
-            },
-            "D:\\IT\\Unity Projects\\2D\\GameJam\\AstarPathfindingProjectEditor.csproj": {
-              "projectPath": "D:\\IT\\Unity Projects\\2D\\GameJam\\AstarPathfindingProjectEditor.csproj"
             },
             "D:\\IT\\Unity Projects\\2D\\GameJam\\PackageToolsEditor.csproj": {
               "projectPath": "D:\\IT\\Unity Projects\\2D\\GameJam\\PackageToolsEditor.csproj"
