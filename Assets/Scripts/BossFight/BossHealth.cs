@@ -35,11 +35,11 @@ public class BossHealth : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter2D(Collider2D coll)
+   public void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.CompareTag("PlayerBullet"))
         {
-            PlayerBullet player = coll.GetComponent<PlayerBullet>();            //access coll script named playerBullet where I have a variable BulletDamage . -= health;
+            PlayerBullet player = coll.transform.GetComponent<PlayerBullet>();            //access coll script named playerBullet where I have a variable BulletDamage . -= health;
 
             if (player != null)
             {
@@ -49,6 +49,12 @@ public class BossHealth : MonoBehaviour
                 healthBar.SetHealth(currentHealth);
             }
         }
+    }
+    public void BossTakeDamage(float playerDamage)
+    {
+        currentHealth -= playerDamage;
+        healthBar.SetHealth(currentHealth);
+
     }
 
  

@@ -14,8 +14,9 @@ public class PlayerTakeDamage : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
- 
+    {
+        PlayerDied();
+
     }
     // For test purpose, to be deleted later!!!
     public void TakeDamage (float damage){

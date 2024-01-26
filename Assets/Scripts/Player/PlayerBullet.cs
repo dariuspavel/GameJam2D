@@ -24,6 +24,16 @@ public class PlayerBullet : MonoBehaviour
             }
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Boss"))
+        {
+            BossHealth enemy = collision.transform.GetComponent<BossHealth>();
+            if (enemy != null)
+            {
+                enemy.BossTakeDamage(bulletDamage);
+            }
+            Destroy(gameObject);
+        }
     }
     /*private void OnCollisionEnter2D(Collision2D collision)
     {

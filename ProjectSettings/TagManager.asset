@@ -8,6 +8,7 @@ TagManager:
   - MainCharacter
   - BasicEnemyBullet
   - PlayerBullet
+  - Boss
   layers:
   - Default
   - TransparentFX
