@@ -106,7 +106,9 @@ public class BossBehaviour : MonoBehaviour
 
     public void firstSpell()
     {
-        int Object = 5;
+        int Object = 8;
+
+        int randomChange = Random.Range(1, 3);
 
         if (lastPlayerLocation == null)
         {
@@ -117,17 +119,20 @@ public class BossBehaviour : MonoBehaviour
         lastPlayerLocation.position = playerPosition.position;
 
         
-
+        if(randomChange == 2)
+        {
+            Instantiate(Abilitie3, transform.position, Quaternion.identity);
+        }
 
 
         for (var i = 0; i < Object; i++)
         {
 
                 // Calculate a random distance between 0 and 5
-                float distance = Random.Range(0f, 5f);
+                float distance = Random.Range(1f, 15f);
 
                 // Calculate a random angle in radians
-                float angle = Random.Range(0f, 2f * Mathf.PI);
+                float angle = Random.Range(0.2f, 8f * Mathf.PI);
 
                 // Calculate the position offset based on polar coordinates
                 Vector3 offset = new Vector3(Mathf.Cos(angle) * distance, 0f, Mathf.Sin(angle) * distance);
@@ -195,7 +200,7 @@ public class BossBehaviour : MonoBehaviour
 
     IEnumerator untilWhen2()
     {
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(3);
 
         isZero = false;
 

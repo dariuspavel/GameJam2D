@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectiles : MonoBehaviour
+public class Projectile1 : MonoBehaviour
 {
   
+
     private Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -17,13 +18,13 @@ public class Projectiles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
+
     }
 
-  
 
-   
-   public void OnTriggerEnter2D(Collider2D coll)
+
+
+    public void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.CompareTag("Player"))
         {
@@ -33,11 +34,11 @@ public class Projectiles : MonoBehaviour
             Destroy(gameObject);
         }
     }
-  
+
 
     private IEnumerator DestroyAfterDelay()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(7f);
         Destroy(gameObject);
     }
 

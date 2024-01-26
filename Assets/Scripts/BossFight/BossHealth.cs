@@ -9,7 +9,7 @@ public class BossHealth : MonoBehaviour
     public float maxHealth = 100;
     public float currentHealth;
 
-    public HealthSlider healthBar; 
+    public PlayerHealthBar healthBar; 
 
     
 
