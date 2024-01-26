@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Heart_Frame_4_Large_0: 5722032506625151773
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
