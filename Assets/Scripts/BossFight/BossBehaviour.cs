@@ -12,6 +12,8 @@ public class BossBehaviour : MonoBehaviour
     [SerializeField]
     private bool isZero = false;
 
+    
+
     [Header("Locations")]
     public Transform playerPosition;
 
@@ -73,7 +75,7 @@ public class BossBehaviour : MonoBehaviour
 
 
             case 0:
-                // do nothing
+                
                 break;
 
             case 1:
@@ -114,63 +116,57 @@ public class BossBehaviour : MonoBehaviour
 
         lastPlayerLocation.position = playerPosition.position;
 
-        for (int i =0; i < Object; i++)
+        
+
+
+
+        for (var i = 0; i < Object; i++)
         {
 
-            // Calculate a random distance between 0 and 5
-            float distance = Random.Range(0f, 5f);
+                // Calculate a random distance between 0 and 5
+                float distance = Random.Range(0f, 5f);
 
-            // Calculate a random angle in radians
-            float angle = Random.Range(0f, 2f * Mathf.PI);
+                // Calculate a random angle in radians
+                float angle = Random.Range(0f, 2f * Mathf.PI);
 
-            // Calculate the position offset based on polar coordinates
-            Vector3 offset = new Vector3(Mathf.Cos(angle) * distance, 0f, Mathf.Sin(angle) * distance);
-
-            Instantiate(warningSign, lastPlayerLocation.position + offset, Quaternion.identity);
+                // Calculate the position offset based on polar coordinates
+                Vector3 offset = new Vector3(Mathf.Cos(angle) * distance, 0f, Mathf.Sin(angle) * distance);
 
 
+                Instantiate(warningSign, lastPlayerLocation.position + offset, Quaternion.identity); //projectiles are inside the warning script
 
-            //Wait for 2 seconds
-            
-                     
-
-            // Spawn GameObject to deal damage
-
-            Instantiate(Abilitie0, lastPlayerLocation.position + offset2, Quaternion.identity);
-
-
-
-
+               
+         
         }
+
 
         Behave = 0;
 
     }
 
-    public void secondSpell() // Spawn more enemies.
+    public void secondSpell() // Spawn  enemies.
     {
-        int enemiesToSpawn = 1;   // they will spawn in 2 locations that means 2 x 2
-
-        for (int i = 0; i < enemiesToSpawn; i++)
-        {
+       
+       
             Instantiate(EnemyPrefab, spawnLocations[0].position , Quaternion.identity);
 
             Instantiate(EnemyPrefab, spawnLocations[1].position, Quaternion.identity);
-        }
+        
 
         Behave = 0;
 
     }
-    public void thirdSpell()
-    {
-        int numberShoots = 0;
 
-        if (numberShoots < 3)
+     public void thirdSpell()
+    {
+        
+
+        for(int i = 0; i < 3; i++)
         {
 
             Instantiate(Abilitie3, transform.position, Quaternion.identity);
-
-            numberShoots++;
+            //should fire 3 times with a delay between shoots, for now shoot just 1
+           
         }
 
         Behave = 0;
@@ -179,18 +175,6 @@ public class BossBehaviour : MonoBehaviour
      
     
 
-    IEnumerator checkState()
-    {
-
-       
-
-       
-
-       
-           yield return new WaitForSeconds(4f);      
-
-
-    }
 
     public void CheckStateV2()
     {
@@ -200,26 +184,14 @@ public class BossBehaviour : MonoBehaviour
 
         isZero = true;
 
-        StartCoroutine(untilWhen2());
-
         Behave = randomNumber;
+
+        StartCoroutine(untilWhen2());
         
-       
-
-
         
     }
 
 
-
-    IEnumerator untilWhen()
-    {
-        yield return new WaitForSeconds(1.5f);
-
-        
-
-
-    }
 
     IEnumerator untilWhen2()
     {

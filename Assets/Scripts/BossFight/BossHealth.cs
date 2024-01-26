@@ -1,15 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossHealth : MonoBehaviour
 {
 
-    public float Health = 1000;
-  
+    public float maxHealth = 100;
+    public float currentHealth;
+
+    public HealthSlider healthBar; 
+
+    
 
     void Start()
     {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         
     }
 
@@ -21,7 +28,7 @@ public class BossHealth : MonoBehaviour
 
     public void whenDie()
     {
-        if (Health <= 0)
+        if (currentHealth <= 0)
         {
             Debug.Log("BossDead");
             gameObject.SetActive(false);
@@ -37,8 +44,15 @@ public class BossHealth : MonoBehaviour
             if (player != null)
             {
                 // Access the BulletDamage variable and apply damage to health
-                Health -= player.bulletDamage;
+                currentHealth -= player.bulletDamage;
+
+                healthBar.SetHealth(currentHealth);
             }
         }
     }
+
+ 
 }
+
+
+

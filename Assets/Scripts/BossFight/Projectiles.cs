@@ -30,7 +30,7 @@ public class Projectiles : MonoBehaviour
     {
         if (coll.CompareTag("Player"))
         {
-            coll.GetComponent<PlayerHealthBar>().currentPlayerHealth -= Damage;
+            coll.GetComponent<PlayerTakeDamage>().TakeDamage(5);
             Debug.Log("ShouldDestroy");
 
             Destroy(gameObject);

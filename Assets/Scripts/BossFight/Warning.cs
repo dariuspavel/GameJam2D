@@ -7,9 +7,12 @@ public class Warning : MonoBehaviour
     public float targetScale = 2f;
     public float duration = 1f;
 
+    public GameObject Projectile;
+
     void Start()
     {
         StartCoroutine(ScaleOverTime());
+        StartCoroutine(spawnProjectile());
     }
 
     private IEnumerator ScaleOverTime()
@@ -33,5 +36,13 @@ public class Warning : MonoBehaviour
         transform.localScale = new Vector3(targetScale, targetScale, 1);
 
         Destroy(gameObject);
+    }
+
+    private IEnumerator spawnProjectile()
+    {
+        yield return new WaitForSeconds(0.9f);
+
+        Instantiate(Projectile, transform.position, Quaternion.identity);
+
     }
 }

@@ -14,12 +14,8 @@ public class PlayerTakeDamage : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   // For test purpose, to be deleted later!!!
-         if (Input.GetKeyDown(KeyCode.Space)){
-            TakeDamage(20f);
-        }
-
-        PlayerDied();
+    {   
+ 
     }
     // For test purpose, to be deleted later!!!
     public void TakeDamage (float damage){
@@ -28,10 +24,9 @@ public class PlayerTakeDamage : MonoBehaviour
     }
 
     void PlayerDied () {
-        if (playerHealthBar.currentPlayerHealth <= 0) {
+        if (playerHealthBar.currentPlayerHealth <= 0) 
+        {
             Destroy(gameObject);
         }
-    }
-
-     
+    }   
 }
