@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PlayerHealthBar : MonoBehaviour
 {
     // Player max health
-    private float playerMaxHealth = 100f;
+    public float playerMaxHealth;
     public float currentPlayerHealth;
     // Health bar has attached a slider which display the health
     public Slider healthSlider;

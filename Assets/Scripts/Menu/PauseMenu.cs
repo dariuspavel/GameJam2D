@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,8 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     private string loadScene = "MainMenu";
     public GameObject pauseMenuUi;
-
+    public GameObject diedMenuUi;
+    public PlayerHealthBar playerHealth;
     // Update is called once per frame
     void Update()
     {
@@ -41,5 +43,12 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame(){
         Application.Quit();
+    }
+
+    public void RestartGame(){
+        diedMenuUi.SetActive(false);
+        string scene = SceneManager.GetActiveScene().name;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(scene);
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerTakeDamage : MonoBehaviour
 {
 
+    public GameObject diedMenuUi;
     public PlayerHealthBar playerHealthBar;
     // Start is called before the first frame update
     void Start()
@@ -25,8 +26,11 @@ public class PlayerTakeDamage : MonoBehaviour
     }
 
     void PlayerDied () {
+         
         if (playerHealthBar.currentPlayerHealth <= 0) 
         {
+            diedMenuUi.SetActive(true);
+            Time.timeScale = 0f;
             Destroy(gameObject);
         }
     }   

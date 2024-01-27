@@ -29,7 +29,7 @@ public class Projectile1 : MonoBehaviour
         if (coll.CompareTag("Player"))
         {
             coll.GetComponent<PlayerTakeDamage>().TakeDamage(5);
-            Debug.Log("ShouldDestroy");
+            // Debug.Log("ShouldDestroy");
 
             Destroy(gameObject);
         }

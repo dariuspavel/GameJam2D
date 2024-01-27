@@ -204,7 +204,7 @@ public class BossBehaviour : MonoBehaviour
 
         isZero = false;
 
-        Debug.Log("initiat");
+        // Debug.Log("initiat");
 
     }
 

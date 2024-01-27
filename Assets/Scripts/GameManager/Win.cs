@@ -18,7 +18,6 @@ public class Win : MonoBehaviour
     {
         if(!bossPlayer.activeSelf)
         {
-            Debug.Log("YouWon");
             win.SetActive(true);
 
             PauseGame();
@@ -29,6 +28,6 @@ public class Win : MonoBehaviour
     void PauseGame()
     {
         // Set the time scale to 0 to pause the game
-        Time.timeScale = 0.1f;
+        Time.timeScale = 0f;
     }
 }

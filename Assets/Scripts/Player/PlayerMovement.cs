@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -29,5 +30,13 @@ public class PlayerMovement : MonoBehaviour
         Vector2 currentLookDirct = storeMousePosition - playerRigidBody.position;
         float playerAngle = Mathf.Atan2(currentLookDirct.y, currentLookDirct.x) * Mathf.Rad2Deg - 90f;
         playerRigidBody.rotation = playerAngle;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("TeleportBoss"))
+        {
+            SceneManager.LoadScene("Test");
+        }
     }
 }

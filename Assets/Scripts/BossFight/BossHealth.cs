@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BossHealth : MonoBehaviour
 {
 
-    public float maxHealth = 100;
+    public float maxHealth = 150f;
     public float currentHealth;
 
     public PlayerHealthBar healthBar; 

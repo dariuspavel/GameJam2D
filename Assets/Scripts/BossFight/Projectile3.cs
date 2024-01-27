@@ -22,7 +22,7 @@ public class Projectile3 : MonoBehaviour
 
         Vector3 direction = (playerPosition.position - transform.position).normalized;
 
-        Debug.Log("Force Direction: " + direction + ", Force Magnitude: " + forceApplied);
+        // Debug.Log("Force Direction: " + direction + ", Force Magnitude: " + forceApplied);
 
         rb.AddForce(direction * forceApplied, ForceMode2D.Impulse);
     }
