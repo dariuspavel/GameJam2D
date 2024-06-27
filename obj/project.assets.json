@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/AstarPathfindingProject.dll": {}
         }
+      },
+      "PackageToolsEditor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "AstarPathfindingProject": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PackageToolsEditor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PackageToolsEditor.dll": {}
+        }
       }
     }
   },
@@ -19,32 +32,45 @@
       "type": "project",
       "path": "AstarPathfindingProject.csproj",
       "msbuildProject": "AstarPathfindingProject.csproj"
+    },
+    "PackageToolsEditor/1.0.0": {
+      "type": "project",
+      "path": "PackageToolsEditor.csproj",
+      "msbuildProject": "PackageToolsEditor.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
-      "AstarPathfindingProject >= 1.0.0"
+      "AstarPathfindingProject >= 1.0.0",
+      "PackageToolsEditor >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Giovanni Giorgio\\.nuget\\packages\\": {}
+    "C:\\Users\\Giovanni Giorgio\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IT\\Unity Projects\\2D\\GameJam\\PackageToolsEditor.csproj",
-      "projectName": "PackageToolsEditor",
-      "projectPath": "D:\\IT\\Unity Projects\\2D\\GameJam\\PackageToolsEditor.csproj",
+      "projectUniqueName": "D:\\IT\\Unity Projects\\2D\\GameJam\\AstarPathfindingProjectEditor.csproj",
+      "projectName": "AstarPathfindingProjectEditor",
+      "projectPath": "D:\\IT\\Unity Projects\\2D\\GameJam\\AstarPathfindingProjectEditor.csproj",
       "packagesPath": "C:\\Users\\Giovanni Giorgio\\.nuget\\packages\\",
       "outputPath": "D:\\IT\\Unity Projects\\2D\\GameJam\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Giovanni Giorgio\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Giovanni Giorgio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -53,6 +79,9 @@
           "projectReferences": {
             "D:\\IT\\Unity Projects\\2D\\GameJam\\AstarPathfindingProject.csproj": {
               "projectPath": "D:\\IT\\Unity Projects\\2D\\GameJam\\AstarPathfindingProject.csproj"
+            },
+            "D:\\IT\\Unity Projects\\2D\\GameJam\\PackageToolsEditor.csproj": {
+              "projectPath": "D:\\IT\\Unity Projects\\2D\\GameJam\\PackageToolsEditor.csproj"
             }
           }
         }
